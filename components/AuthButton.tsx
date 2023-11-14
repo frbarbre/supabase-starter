@@ -20,6 +20,8 @@ export default async function AuthButton() {
     return redirect('/login')
   }
 
+  console.log(user)
+
   return user ? (
     <div className="flex items-center gap-4">
       Hey, {user.email}!
